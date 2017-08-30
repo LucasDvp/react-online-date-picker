@@ -1,10 +1,11 @@
 {
-  "name": "reactonlinedatepicker",
+  "name": "react-online-date-picker",
   "version": "0.1.0",
   "description": "The online date picker based on airbnb react-dates",
   "main": "build/index.js",
   "scripts": {
     "build": "babel lib -d build",
+    "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "prepublish": "yarn run build"
@@ -24,8 +25,19 @@
   },
   "homepage": "https://github.com/LucasDvp/react-online-date-picker#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
+    "polished": "^1.6.2",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dates": "^12.5.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.2"
   },
   "dependencies": {
     "prop-types": "^15.5.10"
