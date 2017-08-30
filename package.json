@@ -1,0 +1,33 @@
+{
+  "name": "reactonlinedatepicker",
+  "version": "0.1.0",
+  "description": "The online date picker based on airbnb react-dates",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel lib -d build",
+    "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "prepublish": "yarn run build"
+  },
+  "keywords": [
+    "react",
+    "date-picker"
+  ],
+  "author": "zikun fan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasDvp/react-online-date-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasDvp/react-online-date-picker/issues"
+  },
+  "homepage": "https://github.com/LucasDvp/react-online-date-picker#readme",
+  "devDependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  }
+}
